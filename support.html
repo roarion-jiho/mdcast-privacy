@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Cast — 지원 / Support</title>
+    <style>
+        :root {
+            --bg: #fbf7f1;
+            --text: #1c1917;
+            --muted: #78716c;
+            --accent: #fb923c;
+            --divider: #e7e5e4;
+        }
+        * { box-sizing: border-box; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        h1 {
+            font-family: "Iowan Old Style", Georgia, serif;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 8px;
+            letter-spacing: -0.01em;
+        }
+        h1 .accent {
+            color: var(--accent);
+            font-style: italic;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 40px 0 12px;
+            padding-top: 24px;
+            border-top: 1px solid var(--divider);
+        }
+        h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 28px 0 4px;
+        }
+        h3.q::before {
+            content: "Q. ";
+            color: var(--accent);
+        }
+        p, li {
+            font-size: 15px;
+            color: var(--text);
+        }
+        p.a {
+            margin: 6px 0 18px;
+            color: #44403c;
+        }
+        ul {
+            padding-left: 22px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+        .meta {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .lang-divider {
+            margin: 80px 0 60px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .lang-divider::before,
+        .lang-divider::after {
+            content: "";
+            display: inline-block;
+            width: 60px;
+            height: 1px;
+            background: var(--divider);
+            vertical-align: middle;
+            margin: 0 16px;
+        }
+        nav {
+            margin-bottom: 32px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+        nav a {
+            margin-right: 16px;
+        }
+        code {
+            background: rgba(120, 113, 108, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <a href="./">개인정보 처리방침</a>
+            <a href="./support.html">지원</a>
+        </nav>
+
+        <h1>MD <span class="accent">Cast</span></h1>
+        <p class="meta">지원 (Support) · 최종 갱신 2026년 5월 1일</p>
+
+        <h2>시스템 요구사항</h2>
+        <ul>
+            <li>iPadOS 17.0 이상</li>
+            <li>iOS 17.0 이상</li>
+            <li>iPad / iPhone 전용 (Mac Catalyst 미지원)</li>
+        </ul>
+
+        <h2>시작하기</h2>
+        <ul>
+            <li><strong>새 문서</strong>: 좌측 사이드바의 <em>＋ 새 문서</em> 탭</li>
+            <li><strong>외부 파일 불러오기</strong>: 사이드바의 <em>📂 불러오기</em> — Files 앱에서 .md 선택</li>
+            <li><strong>모드 전환</strong>: 우상단 <em>편집 / 읽기 / PDF</em> 토글</li>
+            <li><strong>서식 조정</strong>: 헤더의 인스펙터(⚙️) 아이콘 — 글꼴, 색상, 여백, 테이블, 용지 등 모든 항목</li>
+            <li><strong>테마 저장 / 불러오기</strong>: 인스펙터 → <em>테마</em> 탭</li>
+            <li><strong>PDF 공유</strong>: 우상단 공유(↗) 버튼</li>
+        </ul>
+
+        <h2>자주 묻는 질문 (FAQ)</h2>
+
+        <h3 class="q">외부에서 .md 파일을 불러와 수정했는데 원본 파일이 그대로입니다.</h3>
+        <p class="a">v1.0 의 <em>불러오기</em> 는 외부 파일을 MD Cast 폴더로 복사한 사본을 편집합니다. 원본 위치로 다시 저장하려면 헤더의 더보기(⋯) → <em>원본 위치에 저장…</em> 메뉴를 사용하세요. v1.1 에서 외부 폴더 직접 편집을 정식 지원할 예정입니다.</p>
+
+        <h3 class="q">iCloud Drive 에 문서가 보이지 않습니다.</h3>
+        <p class="a">기기 <em>설정</em> → Apple 계정 → <em>iCloud</em> → <em>iCloud Drive</em> 활성화, 그리고 같은 화면에서 <em>MD Cast</em> 토글이 켜져 있는지 확인하세요. 동기화는 네트워크 상태와 파일 크기에 따라 수 초 ~ 수 분이 소요될 수 있습니다.</p>
+
+        <h3 class="q">PDF 의 폰트가 화면과 다르게 보입니다.</h3>
+        <p class="a">시스템 폰트 일부는 PDF 에 임베드되지 않아 fallback 폰트로 렌더링될 수 있습니다. 보다 일관된 결과를 위해 번들 폰트 (Pretendard, Noto Sans KR, Noto Serif KR, D2 Coding, Inter, 나눔고딕, 본고딕) 사용을 권장합니다.</p>
+
+        <h3 class="q">KaTeX 수식이 보이지 않거나 raw 텍스트로 표시됩니다.</h3>
+        <p class="a">인라인 수식은 <code>$...$</code>, 디스플레이 수식은 <code>$$...$$</code>, 여러 줄 환경(aligned, cases 등)은 <code>$$\begin{aligned} ... \end{aligned}$$</code> 형식으로 작성해주세요. 코드 펜스(```) 안의 수식은 일부러 그대로 표시됩니다.</p>
+
+        <h3 class="q">광고나 데이터 수집은 없나요?</h3>
+        <p class="a">없습니다. 모든 처리는 사용자의 디바이스 내부에서 수행되며, 외부 서버와 통신하지 않습니다. 자세한 내용은 <a href="./">개인정보 처리방침</a> 을 참조하세요.</p>
+
+        <h3 class="q">다른 언어 UI 도 지원되나요?</h3>
+        <p class="a">v1.0 은 한국어 UI 단일 출시입니다. v1.1 에서 영어 / 일본어 UI 를 추가할 예정입니다. (본문에 입력하는 다국어 텍스트 — 한국어/영어/일본어/중국어 — 는 v1.0 부터 자동 폰트 매칭으로 정상 표시됩니다.)</p>
+
+        <h3 class="q">버그를 발견했거나 기능을 요청하고 싶습니다.</h3>
+        <p class="a">아래 이메일로 다음 정보와 함께 보내주세요. 빠른 답변을 위해 가능하면 모두 포함해주세요.</p>
+        <ul>
+            <li>기기 모델 (예: iPad Pro 13" M4)</li>
+            <li>iOS / iPadOS 버전</li>
+            <li>MD Cast 버전 (사이드바 → <em>앱 정보·라이선스</em> 에서 확인)</li>
+            <li>재현 단계 (어떤 화면에서 무엇을 했더니 어떤 결과가 나왔는지)</li>
+            <li>가능하면 스크린샷 또는 화면녹화</li>
+        </ul>
+
+        <h2>문의</h2>
+        <p>이메일: <a href="mailto:roarion.2nd@gmail.com">roarion.2nd@gmail.com</a></p>
+        <p>응답 시간: 영업일 기준 24~48시간 (한국어 / English).</p>
+
+        <div class="lang-divider">English</div>
+
+        <h1>MD <span class="accent">Cast</span></h1>
+        <p class="meta">Support · Last updated May 1, 2026</p>
+
+        <h2>System Requirements</h2>
+        <ul>
+            <li>iPadOS 17.0 or later</li>
+            <li>iOS 17.0 or later</li>
+            <li>iPad / iPhone only (Mac Catalyst not supported)</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <ul>
+            <li><strong>New document</strong>: tap <em>＋ New</em> in the sidebar.</li>
+            <li><strong>Import file</strong>: tap <em>📂 Import</em> in the sidebar to pick a .md file from the Files app.</li>
+            <li><strong>Switch mode</strong>: use the <em>Edit / Read / PDF</em> toggle in the top-right.</li>
+            <li><strong>Adjust formatting</strong>: tap the inspector (⚙️) icon — fonts, colors, margins, table styles, paper, and more.</li>
+            <li><strong>Save / load themes</strong>: inspector → <em>Theme</em> tab.</li>
+            <li><strong>Share PDF</strong>: tap the share (↗) button in the top-right.</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3 class="q">I imported an external .md file and edited it, but the original file is unchanged.</h3>
+        <p class="a">In v1.0, <em>Import</em> creates a copy of the external file inside the MD Cast folder and edits the copy. To save back to the original location, use the more menu (⋯) in the editor header → <em>Save to Original Location…</em>. Direct editing of external files will be officially supported in v1.1.</p>
+
+        <h3 class="q">My documents are not showing up in iCloud Drive.</h3>
+        <p class="a">In <em>Settings</em> → your Apple Account → <em>iCloud</em> → <em>iCloud Drive</em>, make sure both iCloud Drive and the <em>MD Cast</em> toggle are enabled. Sync time depends on your network and file size — usually a few seconds to a few minutes.</p>
+
+        <h3 class="q">Fonts in the PDF look different from the screen.</h3>
+        <p class="a">Some system fonts cannot be embedded in PDFs and will fall back to substitutes. For consistent results, we recommend the bundled fonts (Pretendard, Noto Sans KR, Noto Serif KR, D2 Coding, Inter, NanumGothic, Source Han Sans KR).</p>
+
+        <h3 class="q">KaTeX math is not rendering, or shows raw text.</h3>
+        <p class="a">Use <code>$...$</code> for inline math, <code>$$...$$</code> for display math, and <code>$$\begin{aligned} ... \end{aligned}$$</code> for multi-line environments such as <code>aligned</code> or <code>cases</code>. Math inside code fences (```) is intentionally left as-is.</p>
+
+        <h3 class="q">Are there ads or analytics?</h3>
+        <p class="a">No. All processing happens locally on your device. The App does not communicate with any external server. See our <a href="./">Privacy Policy</a> for details.</p>
+
+        <h3 class="q">Is the UI available in languages other than Korean?</h3>
+        <p class="a">v1.0 ships with a Korean-only UI. English and Japanese UIs are planned for v1.1. (Multilingual content you write — Korean / English / Japanese / Chinese — is rendered correctly with automatic font matching from v1.0.)</p>
+
+        <h3 class="q">How do I report a bug or request a feature?</h3>
+        <p class="a">Please email us with the following information so we can respond quickly:</p>
+        <ul>
+            <li>Device model (e.g., iPad Pro 13" M4)</li>
+            <li>iOS / iPadOS version</li>
+            <li>MD Cast version (Sidebar → <em>About / Licenses</em>)</li>
+            <li>Steps to reproduce — what you did, what you expected, what happened</li>
+            <li>Screenshots or a screen recording, if possible</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:roarion.2nd@gmail.com">roarion.2nd@gmail.com</a></p>
+        <p>Response time: within 24–48 hours on business days (Korean / English).</p>
+
+    </div>
+</body>
+</html>
